@@ -41,7 +41,7 @@ class Loader():
         """
         self.audio = self.stream.audio
         audio =  self.filter('atrim', start=start, end=end)
-        return ffmpeg.output(audio, "mp3").run()
+        return ffmpeg.output("testaudio", "wav").run()
 
 
 
